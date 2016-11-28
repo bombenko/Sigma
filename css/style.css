@@ -19,24 +19,19 @@ ul{
 	position:relative;
 	min-height:100vh;
 	padding-bottom:115px;
+    min-width:960px;
 }
 
 .top-panel{
 	background-color:#ededed;
 	padding-bottom:10px;
 	padding-top:8px;
-	min-width:960px;
 }
 
 .clear:after{
 	content:"";
 	display:block;
 	clear:both;
-}
-
-.centered-container{
-	margin:0 auto;
-	width:940px;
 }
 
 .menu{
@@ -111,7 +106,8 @@ ul{
 }
 
 .main-container{
-	min-width:960px;
+    margin:0 auto;
+    width:940px;
 }
 
 .header{
@@ -223,6 +219,11 @@ ul{
 	border-top-color:transparent;
 }
 
+.service:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
 .service:first-child{
 	border-left-color:transparent;
 }
@@ -282,6 +283,11 @@ ul{
 
 .production__list ul{
 	padding-left:30px;
+}
+
+.production__link:hover{
+    text-decoration:underline;
+    color: #000;
 }
 
 .content{
@@ -424,6 +430,7 @@ ul{
 .pagination__icon{
 	width:15px;
 	height:26px;
+    text-indent:-9999px;
 }
 
 .icon_page-back{
