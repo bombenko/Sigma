@@ -64,6 +64,15 @@ ul{
 	color: #cd0000;
 }
 
+.search__label{
+    position:relative; 
+}
+
+.search__hint{
+    position: absolute;
+    text-indent: -9999px;
+}
+
 .search__field{
 	width:275px;
 	height:18px;
@@ -267,7 +276,7 @@ ul{
 	background-image:url(../src/service.png);
 }
 
-.production{
+.sidebar{
 	float:left;
 	width:220px;
 	background:linear-gradient(to top, #ff9600, #ffc600);
@@ -325,8 +334,7 @@ ul{
 	height:130px;
 }
 
-.product:nth-child(3n+1)
-{
+.product:nth-child(3n){
 	margin-right:0px;
 }
 

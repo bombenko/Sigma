@@ -35,7 +35,10 @@
 					</ul>
 				</nav>
 				<form action="#" class="search top-panel__search">
-					<input type="search" name="query" required class="search__field" placeholder="Поиск по сайту">
+                    <label class="search__label">
+                        <span class="search__hint">Поиск по сайту</span>
+                        <input type="search" name="query" required class="search__field" placeholder="Поиск по сайту">
+                    </label>
 					<button class="search__button"><i class="icon search__icon icon_search"></i>Найти</button>
 				</form>
 			</div>
@@ -95,8 +98,8 @@
                     <span class="service__item">IT обслуживание</span>
                 </a>
 			</nav>
-			<aside class="production">
-				<nav>
+			<aside class="sidebar">
+				<nav class="production">
 					<ul class="production__list">
 						<li>
 							<a href="#" class="link production__link">1С: Предприятие</a>
@@ -125,6 +128,7 @@
 				<header class="content__header">
 					<h1 class="content__title">Оборудование для штрих-кодирования</h1 >
 				</header>
+                <div class="products">
 					<div class="product">
 						<div href="#" class="product__preview">
 							<a href="#" class="link link_special">
@@ -273,6 +277,7 @@
 							<a href="#" class="product__add icon icon_busket-add product__add-icon">Добавить в корзину</a>
 						</div>
 					</div>
+                </div>
 				<ul class="pagination">
 					<li class="pagination__item"><a href="#" class="pagination__icon icon icon_page-back">Назад</a></li>
 					<li class="pagination__item"><a href="#" class="link pagination__page-num pagination__link_active">1</a></li>
