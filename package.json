@@ -1,0 +1,25 @@
+{
+  "name": "sigma",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bombenko/Sigma.git"
+  },
+  "author": "Alex Zabenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bombenko/Sigma/issues"
+  },
+  "homepage": "https://github.com/bombenko/Sigma#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-less": "^3.3.0",
+  }
+}
