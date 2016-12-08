@@ -13,22 +13,22 @@
 		+ menu.less
 		+ pagination.less
 		+ products.less
-    + search.less
+    		+ search.less
 		+ services.less
 	- **helpers** каталог c вспомогательными элементами:
 		+ clearfix.less
 		+ variables.less
 	- **layout** каталог с элементами каркаса страницы:
 		+ content.less
-    + footer.less
+    		+ footer.less
 		+ header.less
-    + main-container.less
+    		+ main-container.less
 		+ page.less
-    + sidebar.less
-    + top-panel.less
+    		+ sidebar.less
+    		+ top-panel.less
 	- **typographics** каталог c элементами, описывающими типографику:
 		+ icon.less
-    + link.less
+    		+ link.less
 	- **style.less** основной less-файл.
 	- **style.css** скомпилированный css-файл.
 * **src** - каталог с изображениями для проекта;
