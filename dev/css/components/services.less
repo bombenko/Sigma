@@ -1,0 +1,39 @@
+.services{
+	height: 85px;
+	padding: 5px 20px;
+	background: linear-gradient(to top, @bottom-gradient-color, @top-gradient-color);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.service{
+	float: left;
+	box-sizing: border-box;
+    padding-top: 7px;
+	height: 75px;
+	width: 180px;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-right-color: #ffe17d;
+	border-left-color: #b28700;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+    &:first-child{
+        border-left-color: transparent;
+    }
+    &:last-child{
+    	border-right-color: transparent;
+    }
+}
+
+.service__item{
+    margin-top: 6px;
+	font-size: 12px;
+	font-weight: 700;
+	display: block;
+}
+
+.service__icon{
+	height: 40px;
+}

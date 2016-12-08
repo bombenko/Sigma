@@ -3,18 +3,19 @@ htmlmin = require("gulp-html-minifier"),
 cssmin = require("gulp-csso"),
 less = require("gulp-less"),
 
-dist = "dist/";
+devdist = "dev/",
+releasedist = "release/";
 
 gulp.task("min-css", function(){
 
-	gulp.src("css/style.css")
+	gulp.src(devdist + "css/style.css")
 	.pipe(cssmin())
-	.pipe(gulp.dest(dist + "/css"));
+	.pipe(gulp.dest(releasedist + "css/"));
 
 });
 
 gulp.task("min-html", function(){
-    gulp.src("index.html")
+    gulp.src(devdist + "index.html")
 	.pipe(htmlmin({
 		collapseBooleanAttributes: true,
 		collapseWhitespace: true,
@@ -24,16 +25,15 @@ gulp.task("min-html", function(){
 		removeComments: true,
 		removeScriptTypeAttributes: true,
 		removeStyleLinkTypeAttributes: true,
-
 	}))
-	.pipe(gulp.dest(dist));
+	.pipe(gulp.dest(releasedist));
 
 });
 
 gulp.task("less", function(){
-    gulp.src("menu.less")
+    gulp.src(devdist + "css/style.less")
     .pipe(less())
-    .pipe(gulp.dest(dist + "/css"));
+    .pipe(gulp.dest(devdist + "css/"));
 })
 
-gulp.task("default", ["min-html", "min-css"]);
+gulp.task("default", ["less", "min-html", "min-css"]);

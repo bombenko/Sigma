@@ -1,0 +1,41 @@
+.busket{
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.busket-inner{
+	padding-top: 5px;
+	height: 70px;
+	width: 220px;
+	background: linear-gradient(to top, @bottom-gradient-color, @top-gradient-color);
+}
+
+.busket:after{
+	content: "";
+	border-style: solid;
+	position: absolute;
+	bottom: 0;
+	border-width: 20px 110px 0 110px;
+	border-top-color: @bottom-gradient-color;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+.busket__label{
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.busket__label:last-child{
+	margin-bottom: 0px;
+}
+
+.busket__purchases{
+	color: #353743;
+	font-size: 30px;
+}
+
+.busket__authentication{
+	font-size: 18px;
+}

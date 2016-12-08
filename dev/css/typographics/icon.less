@@ -1,0 +1,58 @@
+.icon{
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.path(@name){
+    @base-path: "../src/";
+    background-image: url("@{base-path}@{name}");
+}
+
+.icon_search{
+	.path("search-icon.png");
+}
+
+.icon_1C{
+	width:90px;
+	.path("1C.png");
+}
+
+.icon_accountant{
+	width:50px;
+	.path("accountant.png");
+}
+
+.icon_equipment{
+	width:54px;
+	.path("equipment.png");
+}
+
+.icon_software{
+	width:58px;
+	.path("software.png");
+}
+
+.icon_service{
+	width:66px;
+	.path("service.png");
+}
+
+.icon_stock{
+	.path("stock.png");
+}
+
+.icon_hit{
+	.path("hit.png");
+}
+
+.icon_busket-add{
+	.path("busket-add.png");
+}
+
+.icon_page-back{
+	.path("page-back.png");
+}
+
+.icon_page-forward{
+	.path("page-forward.png");
+}
