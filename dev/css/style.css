@@ -11,6 +11,10 @@ body {
 ul {
   list-style: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .top-panel {
   background-color: #ededed;
   padding: 10px 0;
@@ -33,8 +37,9 @@ ul {
   margin-bottom: 30px;
 }
 .header__logo {
-  padding-top: 8px;
   float: left;
+  padding-top: 8px;
+  width: 300px;
 }
 .header__inner {
   float: right;
@@ -144,42 +149,42 @@ ul {
   display: inline-block;
 }
 .icon_search {
-  background-image: url("../src/search-icon.png");
+  background-image: url("../images/search-icon.png");
 }
 .icon_1C {
   width: 90px;
-  background-image: url("../src/1C.png");
+  background-image: url("../images/1C.png");
 }
 .icon_accountant {
   width: 50px;
-  background-image: url("../src/accountant.png");
+  background-image: url("../images/accountant.png");
 }
 .icon_equipment {
   width: 54px;
-  background-image: url("../src/equipment.png");
+  background-image: url("../images/equipment.png");
 }
 .icon_software {
   width: 58px;
-  background-image: url("../src/software.png");
+  background-image: url("../images/software.png");
 }
 .icon_service {
   width: 66px;
-  background-image: url("../src/service.png");
+  background-image: url("../images/service.png");
 }
 .icon_stock {
-  background-image: url("../src/stock.png");
+  background-image: url("../images/stock.png");
 }
 .icon_hit {
-  background-image: url("../src/hit.png");
+  background-image: url("../images/hit.png");
 }
 .icon_basket-add {
-  background-image: url("../src/basket-add.png");
+  background-image: url("../images/basket-add.png");
 }
 .icon_page-back {
-  background-image: url("../src/page-back.png");
+  background-image: url("../images/page-back.png");
 }
 .icon_page-forward {
-  background-image: url("../src/page-forward.png");
+  background-image: url("../images/page-forward.png");
 }
 .link {
   text-decoration: none;
@@ -208,24 +213,24 @@ ul {
   border-left-color: transparent;
   border-right-color: transparent;
 }
-.basket__caption {
+.basket__row {
+  font-size: 18px;
   text-align: center;
   margin-bottom: 8px;
 }
-.basket__caption:last-child {
+.basket__row:last-child {
   margin-bottom: 0px;
 }
-.basket__shopcart {
-  color: #353743;
+.basket__title {
+  color: #222;
   font-size: 30px;
-}
-.basket__auth-reg {
-  font-size: 18px;
 }
 .comp-information {
   color: #584b3d;
 }
 .contacts__number {
+  display: inline-block;
+  width: 230px;
   text-align: right;
   margin-bottom: 7px;
 }
@@ -233,7 +238,7 @@ ul {
   color: #002a72;
   font-size: 20px;
 }
-.contacts__link:hover {
+.contacts__link {
   text-decoration: none;
 }
 .number_long {
