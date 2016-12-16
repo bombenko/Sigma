@@ -149,23 +149,18 @@ img {
   background-image: url("../images/search-icon.png");
 }
 .icon_1C {
-  width: 90px;
   background-image: url("../images/1C.png");
 }
 .icon_accountant {
-  width: 50px;
   background-image: url("../images/accountant.png");
 }
 .icon_equipment {
-  width: 54px;
   background-image: url("../images/equipment.png");
 }
 .icon_software {
-  width: 58px;
   background-image: url("../images/software.png");
 }
 .icon_service {
-  width: 66px;
   background-image: url("../images/service.png");
 }
 .icon_stock {
@@ -398,7 +393,6 @@ img {
 .service {
   float: left;
   box-sizing: border-box;
-  padding: 7px 0;
   width: 190px;
   text-align: center;
   border-width: 1px;
@@ -417,7 +411,11 @@ img {
 .service:last-child {
   border-right-color: transparent;
 }
-.service__item {
+.service__link {
+  display: block;
+  padding: 7px 0;
+}
+.service__caption {
   margin-top: 6px;
   font-size: 12px;
   font-weight: 700;
@@ -425,4 +423,6 @@ img {
 }
 .service__icon {
   height: 40px;
+  width: 100%;
+  background-position: center;
 }
