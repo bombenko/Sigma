@@ -24,29 +24,13 @@
 	right: 5px;
 }
 
-.product__icon-stock{
-	position: absolute;
-    bottom: 33px;
-    right: 28px;
-}
-
-.product__icon-hit{
-	position: absolute;
-	width: 45px;
-    line-height: 1.5;
-    bottom: 23px;
-    right: 23px;
-	color: white;
-}
-
 .product__link{
+    display: inline-block;
 	color: #003280;
 	text-decoration: underline;
+    line-height: 1.5;
     &:hover{
         color: #cd0000;
-    }
-    p{
-        line-height: 1.5;
     }
 }
 
@@ -62,12 +46,14 @@
 	font-size: 18px;
 }
 
-.product__add{
+.product__add-btn{
+    cursor: pointer;
     text-indent: -9999px;
-	float: right;
-}
-
-.product__add-icon{
-	width:33px;
-	height:26px;
+    float: right;
+    width: 33px;
+    height: 26px;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(../images/basket-add.png);
 }

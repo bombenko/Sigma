@@ -34,14 +34,31 @@
 
 .icon_stock{
 	.path("stock.png");
+    &:after{
+        content: "Акция";
+        position: absolute;
+        font-style: normal;
+        line-height: 1;
+        color: #222;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .icon_hit{
 	.path("hit.png");
-}
-
-.icon_basket-add{
-	.path("basket-add.png");
+    &:after{
+        content: "Лидер Продаж";
+        font-style: normal;
+        position: absolute;
+        color: white;
+        width: 45px;
+        line-height: 1.5;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .icon_page-back{
